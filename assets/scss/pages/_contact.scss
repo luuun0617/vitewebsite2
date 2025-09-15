@@ -1,0 +1,98 @@
+/* 產品圖片 */
+.product-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.product-col{
+    width: calc(100% / 12 * 6);
+    padding-right: 4px;
+    padding-left: 4px;
+}
+@media(max-width:767px){
+    .product-col{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+/* 產品描述 */
+.del-price{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--neutral-500);
+    padding-left: 8px;
+}
+/* 產品顏色 */
+.proudct-color{
+    width: 64px;
+    text-align: center;
+    color: var(--neutral-600);
+}
+/* 產品尺寸 */
+.btn-product-size{
+    border: 1px solid var(--neutral-300);
+    width: 160px;
+}
+.btn-product-size.active,
+.btn-product-size:hover{
+    border-color: var(--neutral-900);
+}
+/* 收藏/試穿 */
+.prouduct-action{
+    display: flex;
+    gap: 8px;
+}
+.prouduct-action .btn{
+    width: 50%;
+}
+@media(max-width:576px){
+    .prouduct-action .btn{
+        width: 100%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+.prouduct-action .btn-heart{
+    width: 48px;
+    height: 48px;
+}
+@media(max-width:767px){
+    .product-md-col {
+        min-width: 351px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .product-md-row {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+}
+@media(max-width:576px){
+    .prouduct-action .btn-heart{
+        font-size: 16px;
+    }
+}
+.prouduct-action .bi{
+    padding-right: 8px;
+}
+/* 產品資訊 */
+.product-inof-title{
+    font-weight: 500;
+}
+.product-inof-item p{
+    color: var(--neutral-600);
+}
+.product-inof-item{
+    border-bottom: 1px solid var(--neutral-300);
+}
+.banner-content{
+    color: var(--neutral-600);
+    text-align: center;
+}
+@media(max-width:576px){
+    .overflow-x-md-auto {
+        overflow-x: auto;
+    }
+}

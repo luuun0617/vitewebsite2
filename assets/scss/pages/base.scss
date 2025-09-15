@@ -1,0 +1,81 @@
+/* 元件 */
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    padding: 0 12px;
+    color: var(--neutral-300);
+    font-weight: 700;
+}
+.breadcrumb-item{
+    display: flex;
+    font-weight: 500;
+}
+@media(max-width:576px){
+    .breadcrumb-item{
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 5%;
+    }
+}
+.breadcrumb-link{
+    color: var(--neutral-600);
+}
+@media(max-width:576px){
+    .breadcrumb-item + .breadcrumb-item::before{
+        padding: 0px 8px;
+    }
+    .breadcrumb-item{
+        font-size: 14px;
+    }
+}
+.btn{
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+@media(max-width:576px){
+    .btn{
+        padding: 8px 16px;
+    }
+}
+.btn-dark{
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+}
+.btn-light{
+    border: 1px solid var(--neutral-900);
+}
+/* layout */
+.copyright{
+    padding-top: 32px;
+    text-align: center;
+    border-top: 1px solid var(--neutral-300);
+    font-size: 14px;
+    color: var(--neutral-600);
+}
+/* 標籤的基本樣式 */
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-900);
+}
+img{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    color: var(--neutral-900);
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
