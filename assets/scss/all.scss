@@ -2,7 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
 
-@import url(reset.scss);
-@import url(variables.scss);
-@import url(base.scss);
-@import url(utils.scss);
+@import url(./helper/variables.scss);
+@import url(./helper/utils.scss);
+
+@import url(./base/reset.scss);
+@import url(./base/base.scss);
+
+@import url(./components/_breadcrumb.scss);
+@import url(./components/_button.scss);
+
+@import url(./pages/_index.scss);
+@import url(./pages/_about.scss);
+@import url(./pages/_contact.scss);
